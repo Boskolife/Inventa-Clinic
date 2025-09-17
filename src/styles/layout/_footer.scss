@@ -93,7 +93,7 @@
     .contact_links {
         display: flex;
         flex-direction: column;
-        @include adaptive-value("row-gap", 28, 16, 1);
+        row-gap: 12px;
 
         @include media ("<tablet") {
             order: 2;
