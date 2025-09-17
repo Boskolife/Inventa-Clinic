@@ -1,22 +1,355 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,nofollow">
-
-  <title>Test</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <title>Inventa Clinic</title>
   <link rel="stylesheet" href="/styles/main.scss">
-  <script type="module" src="/js/main.ts" defer></script>
+  <script type="module" src="/js/main.js" defer></script>
 </head>
 
 <body>
-  {{> header }}
-  <main>
-
-  </main>
-  {{> footer }}
+  <div id="wrapper">
+    {{> header }}
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero_content">
+            <h1 class="hero_title">Здоров’я починається з турботи</h1>
+            <a href="#" class="btn btn_primary hero_btn">Записатися на прийом <img class="arrow_btn"
+                src="./svg/arrow-right.svg" alt="arrow right"></a>
+            <img class="hero_img" src="./images/hero_img.png" alt="image not found">
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <span class="section_label">Про нас</span>
+          <div class="about_content">
+            <div class="about_head">
+              <h2 class="about_title">Клініка де вас завжди чекають</h2>
+              <p class="about_text">
+                Ми зібрали команду професіоналів які розуміють що найцінніше це увага до людей. Наш
+                підхід – мінімум стресу, максимум турботи. В своїй роботі ми керуємося новітніми
+                клінічними настановами та використовуємо сучасне обладнання.
+                <br>
+                <br>
+                Для нас важливо не просто лікувати хвороби, а й попереджувати їх виникнення. В
+                Inventa
+                ми створили атмосферу довіри і комфорту, щоб кожна людина відчула себе важливою.
+              </p>
+            </div>
+            <div class="about_img">
+              <img src="./images/about_img.png" alt="image not found">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <span class="section_label">Послуги</span>
+          <h2 class="services_title">Наші основні напрямки</h2>
+          <div class="services_content">
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_1.png" alt="image not found">
+              <div class="item_title">
+                <span>Сімейна медецина</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_2.png" alt="image not found">
+              <div class="item_title">
+                <span>Педіатрія</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_3.png" alt="image not found">
+              <div class="item_title">
+                <span>Ендокринологія</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_4.png" alt="image not found">
+              <div class="item_title">
+                <span>Гастроентерологія</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_5.png" alt="image not found">
+              <div class="item_title">
+                <span>Дієтологія</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="services_item">
+              <img class="item_bg" src="./images/services/service_img_6.png" alt="image not found">
+              <div class="item_title">
+                <span>Грудне вигодовування</span>
+                <img class="arrow" src="./svg/arrow_forward.svg" alt="arrow">
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="doctors">
+        <div class="container">
+          <span class="section_label">Наші лікарі</span>
+          <div class="doctors_head">
+            <h2 class="doctors_title">Лікарі які піклуються про ваше здоров’я</h2>
+            <div class="swiper_buttons">
+              <button aria-label="go to prev slide" class="doctors-button-prev swiper-button-prev">
+                <img class="arrow" src="./svg/arrow-right.svg" alt="arrow prev">
+              </button>
+              <button aria-label="go to next slide" class="doctors-button-next swiper-button-next">
+                <img class="arrow" src="./svg/arrow-right.svg" alt="arrow next">
+              </button>
+            </div>
+          </div>
+          <div class="swiper doctors_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="doctors_slide">
+                  <img class="slide_img" src="./images/doctors/doctor_img_1.png"
+                    alt="Сушко Наталя Ігорівна">
+                  <div class="slide_text">
+                    <h5>Сушко Наталя Ігорівна</h5>
+                    <p>
+                      Сімейна лікарка,<br>
+                      Фахівець з грудного вигодовування
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctors_slide">
+                  <img class="slide_img" src="./images/doctors/doctor_img_2.png"
+                    alt="Пагієв Ісмаіл Фаізович">
+                  <div class="slide_text">
+                    <h5>Пагієв Ісмаіл Фаізович</h5>
+                    <p>Сімейний лікар</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctors_slide">
+                  <img class="slide_img" src="./images/doctors/doctor_img_3.png"
+                    alt="Пагієва Анна Сергієвана">
+                  <div class="slide_text">
+                    <h5>Пагієва Анна Сергієвана</h5>
+                    <p>Лікар-педіатр</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctors_slide">
+                  <img class="slide_img" src="./images/doctors/doctor_img_4.png"
+                    alt="Корольков Дмитро Іванович">
+                  <div class="slide_text">
+                    <h5>Корольков Дмитро Іванович</h5>
+                    <p>Лікар ендокринолог</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctors_slide">
+                  <img class="slide_img" src="./images/doctors/doctor_img_5.png"
+                    alt="Чепурко Ірина Миколаївна">
+                  <div class="slide_text">
+                    <h5>Чепурко Ірина Миколаївна</h5>
+                    <p>Лікар терапевт, гастроентеролог, дієтолог</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn_primary doctors_btn">
+            До списку всіх лікарів
+            <img class="arrow" src="./svg/arrow-right.svg" alt="image not found">
+          </a>
+        </div>
+      </section>
+      <section class="declaration">
+        <div class="container">
+          <div class="declaration_body">
+            <div class="declaration_content">
+              <img class="declaration_img" src="./images/declaration_img.png" alt="declaration">
+              <h2 class="declaration_title">Декларація без зайвих турбот</h2>
+              <p class="declaration_descr">
+                У нашій клініці ви можете безоплатно підписати декларацію з
+                сімейним лікарем, терапевтом або педіатром. Це дозволить вам отримувати професійні
+                консультації, направлення на аналізи та обстеження, а також лікування у комфортних
+                умовах.
+              </p>
+              <a href="#" class="btn btn_secondary declaration_btn">
+                Дізнатися більше
+                <img class="arrow" src="./svg/arrow-right.svg" alt="image not found">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact_content">
+            <div class="contact_text">
+              <h2 class="contact_title">наші контакти</h2>
+              <div class="contact_links">
+                <div class="contact_item">
+                  <div class="item_icon">
+                    <img src="./svg/telephone.svg" alt="telephone">
+                  </div>
+                  <div class="item_inner">
+                    <span>Телефон</span>
+                    <div class="item_links">
+                      <a href="tel:+380985815828">+38 098 581 58 28</a>
+                      <a href="tel:+380955815828">+38 095 581 58 28</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact_item">
+                  <div class="item_icon">
+                    <img src="./svg/email.svg" alt="telephone">
+                  </div>
+                  <div class="item_inner">
+                    <span>Пошта</span>
+                    <div class="item_links">
+                      <a href="mailto:inventaclinic@gmail.com">inventaclinic@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact_item">
+                  <div class="item_icon">
+                    <img src="./svg/clock.svg" alt="telephone">
+                  </div>
+                  <div class="item_inner">
+                    <span>Режим роботи</span>
+                    <div class="item_links">
+                      <p>Пн-Пт 08:00-17:00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact_item">
+                  <div class="item_icon">
+                    <img src="./svg/pin.svg" alt="telephone">
+                  </div>
+                  <div class="item_inner">
+                    <span>Адреса клініки</span>
+                    <div class="item_links">
+                      <p>м. Кропивницький, вул. Любомира Гузара 48/149</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact_map"></div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="container">
+          <span class="section_label">Блог</span>
+          <div class="blog-section_head">
+            <h2 class="blog-section_title">Читаємо про здоров’я</h2>
+            <div class="swiper_buttons">
+              <button aria-label="go to prev slide"
+                class="blog-section-button-prev swiper-button-prev">
+                <img class="arrow" src="./svg/arrow-right.svg" alt="arrow prev">
+              </button>
+              <button aria-label="go to next slide"
+                class="blog-section-button-next swiper-button-next">
+                <img class="arrow" src="./svg/arrow-right.svg" alt="arrow next">
+              </button>
+            </div>
+          </div>
+          <div class="swiper blog-section-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_slide">
+                  <div class="slide_img">
+                    <img src="./images/blog_img_1.png" alt="image not found">
+                  </div>
+                  <time datetime="09/27/2025">27 квітня 2025</time>
+                  <h4>Як підписати декларацію з лікарем</h4>
+                  <p>Розповідаємо, що таке декларація, навіщо її підписувати, які документи потрібні
+                    та як проходить процедура. Все просто і без зайвих формальностей.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn_primary doctors_btn">
+            Всі статті
+            <img class="arrow" src="./svg/arrow-right.svg" alt="image not found">
+          </a>
+        </div>
+      </section>
+    </main>
+    {{> footer }}
+  </div>
 </body>
 
 </html>
