@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-
+import { Navigation } from 'swiper/modules';
+initBurger();
 window.addEventListener('load', () => {
   setMenuTopPosition();
   initBurger();
