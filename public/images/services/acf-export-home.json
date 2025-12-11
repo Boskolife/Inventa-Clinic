@@ -1,0 +1,35 @@
+{
+  "key": "group_home_sections",
+  "title": "Головна сторінка — секції",
+  "fields": [
+    { "key": "field_home_hero_tab", "label": "Герой", "name": "", "type": "tab", "placement": "top" },
+    { "key": "field_home_hero_title", "label": "Заголовок (герой)", "name": "home_hero_title", "type": "text", "instructions": "Основний заголовок у блоці героя. Якщо порожньо — використовуйте контент теми." },
+    { "key": "field_home_hero_button_text", "label": "Текст кнопки (герой)", "name": "home_hero_button_text", "type": "text", "instructions": "Наприклад: Записатися на прийом" },
+    { "key": "field_home_hero_button_url", "label": "Посилання кнопки (герой)", "name": "home_hero_button_url", "type": "url", "instructions": "Повний або відносний URL для кнопки у блоці героя." },
+    { "key": "field_home_hero_image", "label": "Зображення (герой)", "name": "home_hero_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "Зображення праворуч у блоці героя." },
+
+    { "key": "field_home_about_tab", "label": "Про нас", "name": "", "type": "tab", "placement": "top" },
+    { "key": "field_home_about_label", "label": "Мітка секції", "name": "home_about_label", "type": "text", "instructions": "Маленький підзаголовок над заголовком, наприклад: Про нас" },
+    { "key": "field_home_about_title", "label": "Заголовок", "name": "home_about_title", "type": "text", "instructions": "Основний заголовок секції Про нас." },
+    { "key": "field_home_about_text", "label": "Текст", "name": "home_about_text", "type": "textarea", "instructions": "Опис секції Про нас. Розриви рядків збережуться." },
+    { "key": "field_home_about_image", "label": "Зображення", "name": "home_about_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "Зображення праворуч від тексту." },
+
+    { "key": "field_home_declaration_tab", "label": "Декларація", "name": "", "type": "tab", "placement": "top" },
+    { "key": "field_home_declaration_image", "label": "Зображення (декларація)", "name": "home_declaration_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "Ілюстрація ліворуч у блоці декларації." },
+    { "key": "field_home_declaration_title", "label": "Заголовок (декларація)", "name": "home_declaration_title", "type": "text", "instructions": "Основний заголовок блоку декларації." },
+    { "key": "field_home_declaration_text", "label": "Опис (декларація)", "name": "home_declaration_text", "type": "textarea", "instructions": "Короткий опис процедури підписання декларації." },
+    { "key": "field_home_declaration_button_text", "label": "Текст кнопки (декларація)", "name": "home_declaration_button_text", "type": "text", "instructions": "Наприклад: Дізнатися більше" },
+    { "key": "field_home_declaration_button_url", "label": "Посилання кнопки (декларація)", "name": "home_declaration_button_url", "type": "url", "instructions": "Куди веде кнопка у блоці декларації." }
+  ],
+  "location": [
+    [
+      { "param": "page_template", "operator": "==", "value": "main-page.php" }
+    ]
+  ],
+  "position": "acf_after_title",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true
+}
+

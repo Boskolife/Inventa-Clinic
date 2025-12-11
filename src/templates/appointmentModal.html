@@ -1,0 +1,28 @@
+<div class="modal" id="appointmentModal" aria-hidden="true" role="dialog" aria-modal="false">
+    <div class="modal_backdrop" data-modal-close></div>
+    <div class="modal_dialog" role="document">
+        <button type="button" class="modal_close" aria-label="Закрити" data-modal-close>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="modal_header">
+            <h3 class="modal_title">Запис на прийом</h3>
+            <p class="modal_subtitle">Залиште контакти, і ми вам зателефонуємо</p>
+        </div>
+        <form class="modal_form" id="appointmentForm">
+            <label class="form_field">
+                <span>Ім’я</span>
+                <input type="text" name="name" placeholder="Ваше ім’я" required>
+            </label>
+            <label class="form_field">
+                <span>Телефон</span>
+                <input type="tel" name="phone" placeholder="+38 ___ ___ __ __" required>
+            </label>
+            <label class="form_field">
+                <span>Коментар (необов’язково)</span>
+                <textarea name="comment" rows="3" placeholder="Коротко опишіть запит"></textarea>
+            </label>
+            <button type="submit" class="btn btn_primary modal_submit">Записатися</button>
+        </form>
+    </div>
+</div>

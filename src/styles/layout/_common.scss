@@ -1,5 +1,26 @@
+html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $yellow;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: $light_gray;
+    }
+}
+
 #wrapper {
     overflow: hidden;
+}
+
+body.modal-open {
+    padding-right: var(--scrollbar-width, 0px);
 }
 
 .section-page {
@@ -1106,6 +1127,141 @@
 
         &_text {
             padding: 0 20px;
+        }
+    }
+}
+
+/* Global Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+
+    &.show {
+        display: flex;
+    }
+
+    &_backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(2px);
+    }
+
+    &_dialog {
+        position: relative;
+        z-index: 1;
+        background: $white;
+        border-radius: 28px;
+        width: min(560px, 92vw);
+        padding: 28px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, .18);
+
+        @include media ("<phone") {
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+
+    &_close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $light_gray;
+        display: grid;
+        place-items: center;
+        border: none;
+        cursor: pointer;
+        transition: $animation-speed;
+
+        &:hover {
+            background-color: $yellow;
+        }
+
+        span {
+            position: absolute;
+            width: 60%;
+            height: 2px;
+            background-color: $black;
+
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &_header {
+        margin-bottom: 16px;
+
+        .modal_title {
+            @include adaptive-value("font-size", 28, 20, 1);
+            margin-bottom: 6px;
+        }
+
+        .modal_subtitle {
+            color: $gray;
+            font-family: $Raleway;
+            font-weight: 500;
+            @include adaptive-value("font-size", 16, 14, 1);
+        }
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .form_field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            span {
+                text-transform: uppercase;
+                @include adaptive-value("font-size", 12, 11, 1);
+                color: $black;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border-radius: 16px;
+                border: 1px solid #EAECF0;
+                background: $light_gray;
+                padding: 14px 16px;
+                font-family: $Raleway;
+                font-weight: 500;
+                color: $black;
+                transition: $animation-speed;
+
+                &:focus {
+                    outline: none;
+                    border-color: $yellow;
+                    background: $white;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+
+        .modal_submit {
+            @include adaptive-value("margin-top", 8, 4, 1);
+
+            @include media ("<phone") {
+                width: 100%;
+            }
         }
     }
 }

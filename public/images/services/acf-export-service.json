@@ -1,0 +1,47 @@
+{
+  "key": "group_service_fields",
+  "title": "Поля послуги",
+  "fields": [
+    { "key": "field_service_hero_title", "label": "Заголовок (герой)", "name": "hero_title", "type": "text", "instructions": "Необов'язково. Якщо порожньо — використовується назва послуги." },
+    { "key": "field_service_hero_description", "label": "Опис (герой)", "name": "hero_description", "type": "textarea", "instructions": "Короткий опис у блоці героя. Якщо порожньо — виводиться контент запису." },
+    { "key": "field_service_hero_button_text", "label": "Текст кнопки (герой)", "name": "hero_button_text", "type": "text", "instructions": "Наприклад: Записатися на прийом" },
+    { "key": "field_service_hero_button_url", "label": "Посилання кнопки (герой)", "name": "hero_button_url", "type": "url", "instructions": "Повний або відносний URL для кнопки у блоці героя." },
+    { "key": "field_service_hero_image", "label": "Зображення (герой)", "name": "hero_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "Зображення праворуч у блоці героя. Якщо порожньо — мініатюра запису або запасне." },
+    { "key": "field_service_feature_1", "label": "Перевага 1", "name": "feature_1", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_feature_2", "label": "Перевага 2", "name": "feature_2", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_feature_3", "label": "Перевага 3", "name": "feature_3", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_feature_4", "label": "Перевага 4", "name": "feature_4", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_feature_5", "label": "Перевага 5", "name": "feature_5", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_feature_6", "label": "Перевага 6", "name": "feature_6", "type": "text", "instructions": "Короткий пункт списку переваг." },
+    { "key": "field_service_banner_text", "label": "Текст банера", "name": "banner_text", "type": "textarea", "instructions": "Невеликий надихаючий текст під списком переваг." },
+    { "key": "field_service_doctor_1_image", "label": "Лікар 1 — зображення", "name": "doctor_1_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_1_name", "label": "Лікар 1 — ПІБ", "name": "doctor_1_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_1_subtitle", "label": "Лікар 1 — підпис", "name": "doctor_1_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." },
+    { "key": "field_service_doctor_2_image", "label": "Лікар 2 — зображення", "name": "doctor_2_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_2_name", "label": "Лікар 2 — ПІБ", "name": "doctor_2_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_2_subtitle", "label": "Лікар 2 — підпис", "name": "doctor_2_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." },
+    { "key": "field_service_doctor_3_image", "label": "Лікар 3 — зображення", "name": "doctor_3_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_3_name", "label": "Лікар 3 — ПІБ", "name": "doctor_3_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_3_subtitle", "label": "Лікар 3 — підпис", "name": "doctor_3_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." },
+    { "key": "field_service_doctor_4_image", "label": "Лікар 4 — зображення", "name": "doctor_4_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_4_name", "label": "Лікар 4 — ПІБ", "name": "doctor_4_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_4_subtitle", "label": "Лікар 4 — підпис", "name": "doctor_4_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." },
+    { "key": "field_service_doctor_5_image", "label": "Лікар 5 — зображення", "name": "doctor_5_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_5_name", "label": "Лікар 5 — ПІБ", "name": "doctor_5_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_5_subtitle", "label": "Лікар 5 — підпис", "name": "doctor_5_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." },
+    { "key": "field_service_doctor_6_image", "label": "Лікар 6 — зображення", "name": "doctor_6_image", "type": "image", "return_format": "array", "preview_size": "thumbnail", "instructions": "Фото лікаря." },
+    { "key": "field_service_doctor_6_name", "label": "Лікар 6 — ПІБ", "name": "doctor_6_name", "type": "text", "instructions": "ПІБ лікаря." },
+    { "key": "field_service_doctor_6_subtitle", "label": "Лікар 6 — підпис", "name": "doctor_6_subtitle", "type": "textarea", "instructions": "Посада/спеціалізація. Допускаються перенос рядків." }
+  ],
+  "location": [
+    [
+      { "param": "post_type", "operator": "==", "value": "service" }
+    ]
+  ],
+  "position": "acf_after_title",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true
+}
+
